@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Search from '@/components/Search'
-import Preview from '@/components/Preview';
+import Search from '@/components/HomeComponents/Search'
+import Preview from '@/components/HomeComponents/Preview';
 
 export default {
   name: 'App',

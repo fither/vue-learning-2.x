@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link class="link" to="/">Home</router-link> |
       <router-link class="link" to="/users">Users</router-link> |
-      <router-link class="link" to="/about">About</router-link>
+      <router-link class="link" to="/todos">Todos</router-link>
       <!-- <router-link class="link" to="/notfound">Not Found</router-link> -->
     </div>
     <router-view/>
@@ -24,7 +24,7 @@
 }
 
 .link {
-  background-color: #42b983;
+  background-color: green;
   padding: .5rem;
   border-radius: 5rem;
   text-decoration: none;
@@ -34,8 +34,17 @@
 }
 
 .link.router-link-exact-active {
-  background: palegreen;
+  background-color: greenyellow;
   color: white;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 [v-cloak] {

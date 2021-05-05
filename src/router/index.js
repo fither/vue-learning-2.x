@@ -11,11 +11,6 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('@/views/About.vue')
-  },
-  {
     path: '/users',
     name: 'Users',
     component: () => import('@/views/Users.vue')
@@ -29,6 +24,11 @@ const routes = [
     path: '/users/user/:userid/posts',
     name: 'UserPosts',
     component: () => import('@/views/UserPosts.vue')
+  },
+  {
+    path: '/todos',
+    name: 'Todos',
+    component: () => import('@/views/Todos.vue')
   },
   {
     path: '/:pathMatch(.*)*',
